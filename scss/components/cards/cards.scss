@@ -1,0 +1,117 @@
+.cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.cards-wrapper-row {
+    display: flex;
+    column-gap: 20px;
+}
+
+.col-horizontal {
+    display: flex;
+    column-gap: 20px;
+}
+.col-vertical {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.card {
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.2s ease-in;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px #4395939a;
+}
+
+.card-horizontal {
+    width: 539px;
+    height: 180px;
+}
+
+.card-sale {
+    background-size: cover;
+    background-position: center;
+
+    font-size: $font-size-title;
+    font-family: $main-font;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-vertical {
+    width: 259px;
+    height: 380px;
+}
+
+.card-product {
+    position: relative;
+
+    &__link {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__fav-btn {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        background-color: #fff;
+        text-align: center;
+
+        & svg {
+            display: inline-block;
+            vertical-align: middle;
+
+            stroke: black;
+            fill: #fff;
+            transition: all 0.2s ease-in;
+        }
+
+        &:hover svg {
+            stroke: #fd2e24;
+            fill: #fd2e24;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.card-section {
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    &__title {
+        font-family: $main-font;
+        font-size: $font-size-card-title;
+        margin-bottom: 10px;
+        color: #001aa2;
+    }
+
+    &__desc {
+        font-size: $font-size-card-text;
+    }
+}
+
+.card-section-red .card-section__title {
+    color: #fd2e24;
+}

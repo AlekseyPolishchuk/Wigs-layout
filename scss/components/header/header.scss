@@ -1,0 +1,93 @@
+.search {
+    width: 490px;
+    height: 44px;
+
+    &-icon {
+        margin-right: 7px;
+    }
+}
+
+.search-label {
+    height: 100%;
+    display: flex;
+}
+
+.search-input {
+    padding: 0 10px;
+    flex-grow: 1;
+    font-family: $second-font;
+    font-size: $font-size-search;
+    background: none;
+    border-radius: 15px;
+
+    &::placeholder {
+        color: rgba(0, 0, 0, 0.2);
+    }
+
+    &:focus,
+    &:active {
+        background-color: #fff;
+    }
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+.header-nav {
+    font-size: $font-size-search;
+    font-family: $second-font;
+
+    &-list {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+        position: relative;
+    }
+
+    &__item::after {
+        content: '';
+        display: block;
+        height: 2px;
+        background-color: #000;
+        position: absolute;
+        left: 0;
+        bottom: -9px;
+        width: 0%;
+
+        transition: width 0.2s ease;
+    }
+
+    &__item:hover::after {
+        width: 100%;
+    }
+
+    &__item.active::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -9px;
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color: #000;
+    }
+
+    &__item + &__item {
+        margin-left: 42px;
+    }
+
+    &__item + &__item-icon {
+        margin-left: 50px;
+    }
+
+    &__item-icon + &__item-icon {
+        margin-left: 25px;
+    }
+}

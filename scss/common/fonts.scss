@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Sofia';
+    src: url('../fonts/sofia-pro/Sofia-Bold.eot');
+    src: local('Sofia Bold'), local('Sofia-Bold'),
+        url('../fonts/sofia-pro/Sofia-Bold.eot?#iefix')
+            format('embedded-opentype'),
+        url('../fonts/sofia-pro/Sofia-Bold.woff') format('woff'),
+        url('../fonts/sofia-pro/Sofia-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sofia';
+    src: url('../fonts/sofia-pro/Sofia-Medium.eot');
+    src: local('Sofia Medium'), local('Sofia-Medium'),
+        url('../fonts/sofia-pro/Sofia-Medium.eot?#iefix')
+            format('embedded-opentype'),
+        url('../fonts/sofia-pro/Sofia-Medium.woff') format('woff'),
+        url('../fonts/sofia-pro/Sofia-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circular Std';
+    src: url('../fonts/circular/CircularStd-Medium.eot');
+    src: local('Circular Std Medium'), local('CircularStd-Medium'),
+        url('../fonts/circular/CircularStd-Medium.eot?#iefix')
+            format('embedded-opentype'),
+        url('../fonts/circular/CircularStd-Medium.woff2') format('woff2'),
+        url('../fonts/circular/CircularStd-Medium.woff') format('woff'),
+        url('../fonts/circular/CircularStd-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
